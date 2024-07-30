@@ -1,0 +1,29 @@
+{
+  "id": "mgt2e-animals",
+  "title": "Mongoose Traveller 2e Animals",
+  "description": "Animals for Mongoose Traveller",
+  "authors": [
+    {
+      "name": "Samuel Penn"
+    }
+  ],
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 11,
+    "maximum": 11
+  },
+  "url": "",
+  "download": "",
+  "manifest": "",
+  "packs": [
+    {
+      "name": "mgt2e-animals",
+      "label": "MgT2e Animals",
+      "path": "packs/animals",
+      "type": "Actor",
+      "module": "mgt2e-animals",
+      "system": "mgt2e"
+    }
+  ]
+}

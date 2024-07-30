@@ -1,0 +1,45 @@
+#!/bin/bash
+#
+# Pack or Unpack the compendium files.
+# Pack the files to create compendium databases from the source files.
+# Unpack the files to create source files from the compendium databases.
+#
+
+function die {
+    echo $*
+    exit 1
+}
+
+cmd=$1
+
+fvtt package | grep "Module mgt2e-animals" || die "Run fvtt package workon mgt2e-animals"
+
+cd mgt2e-animals || die "Cannot find directory 'mgt2e-animals'"
+
+PACKS="animals"
+
+if [ "$cmd" = "pack" ]
+then
+    echo "Packing JSON files into compendium"
+
+    for pack in $PACKS
+    do
+        mkdir -p packs/$pack
+        fvtt package pack -n $pack --in packs/_source/$pack/
+    done
+elif [ "$cmd" = "unpack" ]
+then
+    echo "Unpacking compendiums into JSON files"
+    for pack in $PACKS
+    do
+        if [ -d packs/$pack ]
+        then
+            fvtt package unpack -n $pack --out packs/_source/$pack/
+        fi
+    done
+else
+    echo "Missing argument: pack|unpack"
+    exit 1
+fi
+
+exit 0
