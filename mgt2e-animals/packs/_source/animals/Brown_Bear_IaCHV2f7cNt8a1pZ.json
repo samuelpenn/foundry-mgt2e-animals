@@ -1,18 +1,17 @@
 {
-  "folder": "uF5AuThZDtcuQF98",
-  "name": "Wolf",
+  "name": "Brown Bear",
   "type": "creature",
-  "img": "modules/mgt2e-animals/images/wolf.jpg",
+  "img": "systems/mgt2e/icons/actors/creature-red.svg",
   "system": {
     "speed": {
-      "base": 12,
+      "base": 6,
       "value": 6
     },
     "initiative": {
       "base": 0,
       "value": 0
     },
-    "size": "0",
+    "size": "2",
     "rads": 0,
     "weightCarried": 0,
     "heavyLoad": 0,
@@ -58,11 +57,11 @@
     },
     "hits": {
       "value": 21,
-      "max": 21,
+      "max": 40,
       "damage": 0,
       "tmpDamage": 0
     },
-    "description": "<p>A pack predator known for its endurance. Wolves will often chase down a prey, exhausting them before moving in for the kill. They can operate in packs of up to several dozen, working together to hunt prey.</p>\n<p>&nbsp;</p>\n<table style=\"width: 100%;\" border=\"1\"><colgroup><col style=\"width: 17.3485%;\"><col style=\"width: 82.6515%;\"></colgroup>\n<tbody>\n<tr>\n<td><strong>D6</strong></td>\n<td><strong>Action</strong></td>\n</tr>\n<tr>\n<td>1-3</td>\n<td>Wolf will try to bite its prey, performing a standard bite attack.</td>\n</tr>\n<tr>\n<td>4-5</td>\n<td>Wolf will fall back.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Wolf will try to grab its prey. If it succeeds on a bite attack, it will hold on. Make a contested Athletics (Strength) check. On success, the wolf stays attached and prey is at half move. Next round, it gets DM+2 to the attack.</td>\n</tr>\n</tbody>\n</table>",
+    "description": "",
     "settings": {
       "hideUntrained": false,
       "onlyBackground": false,
@@ -70,808 +69,763 @@
       "columns": 3,
       "lockCharacteristics": false,
       "lockSkills": false,
-      "autoAge": false
+      "autoAge": true
     },
     "skills": {
       "admin": {
-        "label": "Admin",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
+        "id": "admin",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/admin.svg"
       },
       "advocate": {
-        "label": "Advocate",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "advocate",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/advocate.svg"
       },
       "animals": {
-        "label": "Animals",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/animals.svg",
         "specialities": {
           "handling": {
-            "label": "Handling",
             "default": "DEX",
+            "id": "handling",
             "value": 0
           },
           "vetinary": {
-            "label": "Vetinary",
             "default": "EDU",
+            "id": "vetinary",
             "value": 0
           },
           "training": {
-            "label": "Training",
             "default": "INT",
+            "id": "training",
             "value": 0
           }
-        }
+        },
+        "id": "animals",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/animals.svg"
       },
       "art": {
-        "label": "Art",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/art.svg",
         "specialities": {
           "performer": {
-            "label": "Performer",
+            "id": "performer",
             "value": 0
           },
           "holography": {
-            "label": "Holography",
+            "id": "holography",
             "value": 0
           },
           "instrument": {
-            "label": "Instrument",
+            "id": "instrument",
             "value": 0
           },
           "visualMedia": {
-            "label": "Visual Media",
+            "id": "visualMedia",
             "value": 0
           },
           "write": {
-            "label": "Write",
+            "id": "write",
             "value": 0
           }
-        }
+        },
+        "id": "art",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/art.svg"
       },
       "astrogation": {
-        "label": "Astrogation",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "astrogation",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/astrogation.svg"
       },
       "athletics": {
-        "label": "Athletics",
         "default": "DEX",
-        "value": 0,
-        "trained": true,
         "background": true,
         "creature": true,
         "requires": "DEX",
-        "icon": "systems/mgt2e/icons/skills/athletics.svg",
         "specialities": {
           "dexterity": {
-            "label": "Dexterity",
             "default": "DEX",
             "combat": true,
-            "value": "1"
+            "id": "dexterity",
+            "value": 0
           },
           "endurance": {
-            "label": "Endurance",
             "default": "END",
-            "value": "3"
+            "id": "endurance",
+            "value": 0
           },
           "strength": {
-            "label": "Strength",
             "default": "STR",
             "combat": true,
-            "value": "0"
+            "id": "strength",
+            "value": 0
           }
-        }
+        },
+        "id": "athletics",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/athletics.svg",
+        "trained": false
       },
       "broker": {
-        "label": "Broker",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "broker",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/broker.svg"
       },
       "carouse": {
-        "label": "Carouse",
         "default": "SOC",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
+        "id": "carouse",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/carouse.svg"
       },
       "deception": {
-        "label": "Deception",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
         "creature": true,
-        "icon": "systems/mgt2e/icons/skills/deception.svg"
+        "id": "deception",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/deception.svg",
+        "trained": false
       },
       "diplomat": {
-        "label": "Diplomat",
         "default": "SOC",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "diplomat",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/diplomat.svg"
       },
       "drive": {
-        "label": "Drive",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "DEX",
-        "icon": "systems/mgt2e/icons/skills/drive.svg",
         "specialities": {
           "hovercraft": {
-            "label": "Hovercraft",
+            "id": "hovercraft",
             "value": 0
           },
           "mole": {
-            "label": "Mole",
+            "id": "mole",
             "value": 0
           },
           "track": {
-            "label": "Track",
+            "id": "track",
             "value": 0
           },
           "walker": {
-            "label": "Walker",
+            "id": "walker",
             "value": 0
           },
           "wheel": {
-            "label": "Wheel",
+            "id": "wheel",
             "value": 0
           }
-        }
+        },
+        "id": "drive",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/drive.svg"
       },
       "electronics": {
-        "label": "Electronics",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/electronics.svg",
         "specialities": {
           "comms": {
-            "label": "Comms",
+            "id": "comms",
             "value": 0
           },
           "computers": {
-            "label": "Computers",
+            "id": "computers",
             "value": 0
           },
           "remoteOps": {
-            "label": "Remote Ops",
+            "id": "remoteOps",
             "value": 0
           },
           "sensors": {
-            "label": "Sensors",
+            "id": "sensors",
             "value": 0
           }
-        }
+        },
+        "id": "electronics",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/electronics.svg"
       },
       "engineer": {
-        "label": "Engineer",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/engineer.svg",
         "specialities": {
           "mDrive": {
-            "label": "M-drive",
+            "id": "mDrive",
             "value": 0
           },
           "jDrive": {
-            "label": "J-drive",
+            "id": "jDrive",
             "value": 0
           },
           "lifeSupport": {
-            "label": "Life Support",
+            "id": "lifeSupport",
             "value": 0
           },
           "power": {
-            "label": "Power",
+            "id": "power",
             "value": 0
           }
-        }
+        },
+        "id": "engineer",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/engineer.svg"
       },
       "explosives": {
-        "label": "Explosives",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
         "combat": true,
+        "id": "explosives",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/explosives.svg"
       },
       "flyer": {
-        "label": "Flyer",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "DEX",
-        "icon": "systems/mgt2e/icons/skills/flyer.svg",
         "specialities": {
           "airship": {
-            "label": "Airship",
+            "id": "airship",
             "value": 0
           },
           "grav": {
-            "label": "Grav",
+            "id": "grav",
             "value": 0
           },
           "ornithopter": {
-            "label": "Ornithopter",
+            "id": "ornithopter",
             "value": 0
           },
           "rotor": {
-            "label": "Rotor",
+            "id": "rotor",
             "value": 0
           },
           "wing": {
-            "label": "Wing",
+            "id": "wing",
             "value": 0
           }
-        }
+        },
+        "id": "flyer",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/flyer.svg"
       },
       "gambler": {
-        "label": "Gambler",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "gambler",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/gambler.svg"
       },
       "gunner": {
-        "label": "Gunner",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/gunner.svg",
         "specialities": {
           "turret": {
-            "label": "Turret",
             "combat": true,
+            "id": "turret",
             "value": 0
           },
           "ortillery": {
-            "label": "Ortillery",
             "combat": true,
+            "id": "ortillery",
             "value": 0
           },
           "screen": {
-            "label": "Screen",
             "combat": true,
+            "id": "screen",
             "value": 0
           },
           "capital": {
-            "label": "Capital",
             "default": "INT",
             "combat": true,
+            "id": "capital",
             "value": 0
           }
-        }
+        },
+        "id": "gunner",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/gunner.svg"
       },
       "guncombat": {
-        "label": "Gun Combat",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "requires": "DEX",
         "creature": true,
-        "icon": "systems/mgt2e/icons/skills/guncombat.svg",
         "specialities": {
           "archaic": {
-            "label": "Archaic",
             "combat": true,
+            "id": "archaic",
             "value": 0
           },
           "energy": {
-            "label": "Energy",
             "combat": true,
+            "id": "energy",
             "value": 0
           },
           "slug": {
-            "label": "Slug",
             "combat": true,
+            "id": "slug",
             "value": 0
           }
-        }
+        },
+        "id": "guncombat",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/guncombat.svg",
+        "trained": false
       },
       "heavyweapons": {
-        "label": "Heavy Weapons",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/heavyweapons.svg",
         "specialities": {
           "artillery": {
-            "label": "Artillery",
             "combat": true,
+            "id": "artillery",
             "value": 0
           },
           "portable": {
-            "label": "Portable",
             "combat": true,
+            "id": "portable",
             "value": 0
           },
           "vehicle": {
-            "label": "Vehicle",
             "combat": true,
+            "id": "vehicle",
             "value": 0
           }
-        }
+        },
+        "id": "heavyweapons",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/heavyweapons.svg"
       },
       "independence": {
-        "label": "Independence",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "TER",
+        "id": "independence",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/independence.svg"
       },
       "investigate": {
-        "label": "Investigate",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "investigate",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/investigate.svg"
       },
       "jackofalltrades": {
-        "label": "Jack-of-All-Trades",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "jackofalltrades",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/jackofalltrades.svg"
       },
       "language": {
-        "label": "Language",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/language.svg",
         "specialities": {
           "galanglic": {
-            "label": "Galanglic",
+            "id": "galanglic",
             "value": 0
           },
           "vilani": {
-            "label": "Vilani",
+            "id": "vilani",
             "value": 0
           },
           "zdetl": {
-            "label": "Zdetl",
+            "id": "zdetl",
             "value": 0
           },
           "oynprith": {
-            "label": "Oynprith",
+            "id": "oynprith",
             "value": 0
           },
           "trokh": {
-            "label": "Trokh",
+            "id": "trokh",
             "value": 0
           },
           "gvegh": {
-            "label": "Gvegh",
+            "id": "gvegh",
             "value": 0
           }
-        }
+        },
+        "id": "language",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/language.svg"
       },
       "leadership": {
-        "label": "Leadership",
         "default": "SOC",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "leadership",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/leadership.svg"
       },
       "mechanic": {
-        "label": "Mechanic",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
+        "id": "mechanic",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/mechanic.svg"
       },
       "medic": {
-        "label": "Medic",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
+        "id": "medic",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/medic.svg"
       },
       "melee": {
-        "label": "Melee",
         "default": "DEX",
-        "value": 0,
-        "trained": true,
         "requires": "DEX",
         "creature": true,
-        "icon": "systems/mgt2e/icons/skills/melee.svg",
         "specialities": {
           "unarmed": {
-            "label": "Unarmed",
             "combat": true,
-            "value": "0"
+            "id": "unarmed",
+            "value": 0
           },
           "blade": {
-            "label": "Blade",
             "combat": true,
-            "value": "0"
+            "id": "blade",
+            "value": 0
           },
           "bludgeon": {
-            "label": "Bludgeon",
             "combat": true,
-            "value": "0"
+            "id": "bludgeon",
+            "value": 0
           },
           "natural": {
-            "label": "Natural",
             "combat": true,
-            "value": "2"
+            "id": "natural",
+            "value": 0
           }
-        }
+        },
+        "id": "melee",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/melee.svg",
+        "trained": false
       },
       "navigation": {
-        "label": "Navigation",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "navigation",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/navigation.svg"
       },
       "persuade": {
-        "label": "Persuade",
         "default": "SOC",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
         "creature": true,
-        "icon": "systems/mgt2e/icons/skills/persuade.svg"
+        "id": "persuade",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/persuade.svg",
+        "trained": false
       },
       "pilot": {
-        "label": "Pilot",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/pilot.svg",
         "specialities": {
           "smallCraft": {
-            "label": "Small Craft",
+            "id": "smallCraft",
             "value": 0
           },
           "spacecraft": {
-            "label": "Spacecraft",
+            "id": "spacecraft",
             "value": 0
           },
           "capitalShips": {
-            "label": "Capital Ships",
+            "id": "capitalShips",
             "value": 0
           }
-        }
+        },
+        "id": "pilot",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/pilot.svg"
       },
       "profession": {
-        "label": "Profession",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
         "individual": true,
-        "icon": "systems/mgt2e/icons/skills/profession.svg",
         "specialities": {
           "belter": {
-            "label": "Belter",
-            "value": 0,
-            "trained": false
+            "id": "belter",
+            "value": 0
           },
           "biologicals": {
-            "label": "Biologicals",
-            "value": 0,
-            "trained": false
+            "id": "biologicals",
+            "value": 0
           },
           "civilEngineering": {
-            "label": "Civil Engineering",
-            "value": 0,
-            "trained": false
+            "id": "civilEngineering",
+            "value": 0
           },
           "construction": {
-            "label": "Construction",
-            "value": 0,
-            "trained": false
+            "id": "construction",
+            "value": 0
           },
           "hydroponics": {
-            "label": "Hydroponics",
-            "value": 0,
-            "trained": false
+            "id": "hydroponics",
+            "value": 0
           },
           "polymers": {
-            "label": "Polymers",
-            "value": 0,
-            "trained": false
+            "id": "polymers",
+            "value": 0
           },
           "robotics": {
-            "label": "Robotics",
-            "value": 0,
-            "trained": false
+            "id": "robotics",
+            "value": 0
           }
-        }
+        },
+        "id": "profession",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/profession.svg"
       },
       "recon": {
-        "label": "Recon",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
         "creature": true,
+        "id": "recon",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/recon.svg",
+        "trained": false,
         "bonus": 1,
         "notes": "Heightened Senses"
       },
       "science": {
-        "label": "Science",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/science.svg",
         "specialities": {
           "archaeology": {
-            "label": "Archaeology",
+            "id": "archaeology",
             "value": 0
           },
           "astronomy": {
-            "label": "Astronomy",
+            "id": "astronomy",
             "value": 0
           },
           "biology": {
-            "label": "Biology",
+            "id": "biology",
             "value": 0
           },
           "chemistry": {
-            "label": "Chemistry",
+            "id": "chemistry",
             "value": 0
           },
           "cosmology": {
-            "label": "Cosmology",
+            "id": "cosmology",
             "value": 0
           },
           "cybernetics": {
-            "label": "Cybernetics",
+            "id": "cybernetics",
             "value": 0
           },
           "economics": {
-            "label": "Economics",
+            "id": "economics",
             "value": 0
           },
           "genetics": {
-            "label": "Genetics",
+            "id": "genetics",
             "value": 0
           },
           "history": {
-            "label": "History",
+            "id": "history",
             "value": 0
           },
           "linquistics": {
-            "label": "Linguistics",
+            "id": "linquistics",
             "value": 0
           },
-          "philosopy": {
-            "label": "Philosophy",
+          "philosophy": {
+            "id": "philosophy",
             "value": 0
           },
           "physics": {
-            "label": "Physics",
+            "id": "physics",
             "value": 0
           },
           "planetology": {
-            "label": "Planetology",
+            "id": "planetology",
             "value": 0
           },
           "psionicology": {
-            "label": "Psionicology",
+            "id": "psionicology",
             "value": 0
           },
           "psycology": {
-            "label": "Psycology",
+            "id": "psycology",
             "value": 0
           },
           "robotics": {
-            "label": "Robotics",
+            "id": "robotics",
             "value": 0
           },
           "sophontology": {
-            "label": "Sophontology",
+            "id": "sophontology",
             "value": 0
           },
           "xenology": {
-            "label": "Xenology",
+            "id": "xenology",
             "value": 0
           }
-        }
+        },
+        "id": "science",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/science.svg"
       },
       "seafarer": {
-        "label": "Seafarer",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/seafarer.svg",
         "specialities": {
           "oceanShips": {
-            "label": "Ocean Ships",
+            "id": "oceanShips",
             "value": 0
           },
           "personal": {
-            "label": "Personal",
+            "id": "personal",
             "value": 0
           },
           "sail": {
-            "label": "Sail",
+            "id": "sail",
             "value": 0
           },
           "submarine": {
-            "label": "Submarine",
+            "id": "submarine",
             "value": 0
           }
-        }
+        },
+        "id": "seafarer",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/seafarer.svg"
       },
       "stealth": {
-        "label": "Stealth",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
         "creature": true,
-        "icon": "systems/mgt2e/icons/skills/stealth.svg"
+        "id": "stealth",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/stealth.svg",
+        "trained": false
       },
       "steward": {
-        "label": "Steward",
         "default": "SOC",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
+        "id": "steward",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/steward.svg"
       },
       "streetwise": {
-        "label": "Streetwise",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
+        "id": "streetwise",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/streetwise.svg"
       },
       "survival": {
-        "label": "Survival",
         "default": "EDU",
-        "value": "2",
-        "trained": true,
         "background": true,
         "requires": "INT",
         "creature": true,
+        "id": "survival",
+        "value": "0",
         "icon": "systems/mgt2e/icons/skills/survival.svg",
+        "trained": true,
         "bonus": 1,
         "notes": "Heightened Senses"
       },
       "tactics": {
-        "label": "Tactics",
         "default": "EDU",
-        "value": 0,
-        "trained": false,
         "requires": "INT",
-        "icon": "systems/mgt2e/icons/skills/tactics.svg",
         "specialities": {
           "military": {
-            "label": "Military",
+            "id": "military",
             "value": 0
           },
           "naval": {
-            "label": "Naval",
+            "id": "naval",
             "value": 0
           }
-        }
+        },
+        "id": "tactics",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/tactics.svg"
       },
       "vaccsuit": {
-        "label": "Vacc Suit",
         "default": "DEX",
-        "value": 0,
-        "trained": false,
         "background": true,
         "requires": "INT",
+        "id": "vaccsuit",
+        "value": 0,
         "icon": "systems/mgt2e/icons/skills/vaccsuit.svg"
       },
       "telepathy": {
-        "label": "Telepathy",
         "default": "PSI",
-        "value": 0,
-        "trained": false,
         "requires": "PSI",
         "trait": "psionic",
-        "icon": "systems/mgt2e/icons/skills/psi.svg"
+        "icon": "systems/mgt2e/icons/skills/psi.svg",
+        "id": "telepathy",
+        "value": 0
       },
       "clairvoyance": {
-        "label": "Clairvoyance",
         "default": "PSI",
-        "value": 0,
-        "trained": false,
         "requires": "PSI",
         "trait": "psionic",
-        "icon": "systems/mgt2e/icons/skills/psi.svg"
+        "icon": "systems/mgt2e/icons/skills/psi.svg",
+        "id": "clairvoyance",
+        "value": 0
       },
       "telekinesis": {
-        "label": "Telekinesis",
         "default": "PSI",
-        "value": 0,
-        "trained": false,
         "requires": "PSI",
         "trait": "psionic",
-        "icon": "systems/mgt2e/icons/skills/psi.svg"
+        "icon": "systems/mgt2e/icons/skills/psi.svg",
+        "id": "telekinesis",
+        "value": 0
       },
       "awareness": {
-        "label": "Awareness",
         "default": "PSI",
-        "value": 0,
-        "trained": false,
         "requires": "PSI",
         "trait": "psionic",
-        "icon": "systems/mgt2e/icons/skills/psi.svg"
+        "icon": "systems/mgt2e/icons/skills/psi.svg",
+        "id": "awareness",
+        "value": 0
       },
       "teleportation": {
-        "label": "Teleportation",
         "default": "PSI",
-        "value": 0,
-        "trained": false,
         "requires": "PSI",
         "trait": "psionic",
-        "icon": "systems/mgt2e/icons/skills/psi.svg"
+        "icon": "systems/mgt2e/icons/skills/psi.svg",
+        "id": "teleportation",
+        "value": 0
       },
       "untrained": {
-        "label": "Untrained",
         "default": "INT",
-        "value": 0,
-        "trained": false,
         "requires": "XXX",
-        "icon": "systems/mgt2e/icons/skills/new.svg"
+        "id": "untrained",
+        "value": 0,
+        "icon": "systems/mgt2e/icons/skills/untrained.svg"
       }
     },
     "protection": 0,
@@ -882,7 +836,7 @@
     "archaic": 0,
     "ablat": 0,
     "powered": 0,
-    "behaviour": "carnivore chaser",
+    "behaviour": "omnivore hunter ",
     "traits": "heightenedSenses",
     "armour": {
       "protection": null,
@@ -892,27 +846,26 @@
     }
   },
   "prototypeToken": {
-    "name": "Wolf",
-    "displayName": 50,
+    "name": "Brown Bear",
+    "displayName": 0,
     "actorLink": false,
-    "appendNumber": true,
+    "appendNumber": false,
     "prependAdjective": false,
     "texture": {
-      "src": "modules/mgt2e-animals/images/Tokens/wolf.webp",
+      "src": "icons/svg/mystery-man.svg",
       "scaleX": 1,
       "scaleY": 1,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0,
-      "tint": null
+      "rotation": 0
     },
     "width": 1,
     "height": 1,
-    "lockRotation": true,
+    "lockRotation": false,
     "rotation": 0,
     "alpha": 1,
     "disposition": -1,
-    "displayBars": 40,
+    "displayBars": 0,
     "bar1": {
       "attribute": "hits"
     },
@@ -939,8 +892,7 @@
       "darkness": {
         "min": 0,
         "max": 1
-      },
-      "color": null
+      }
     },
     "sight": {
       "enabled": false,
@@ -950,84 +902,32 @@
       "attenuation": 0.1,
       "brightness": 0,
       "saturation": 0,
-      "contrast": 0,
-      "color": null
+      "contrast": 0
     },
     "detectionModes": [],
     "flags": {},
     "randomImg": false
   },
-  "items": [
-    {
-      "name": "Tooth and Claw",
-      "type": "weapon",
-      "img": "systems/mgt2e/icons/items/melee-natural.svg",
-      "system": {
-        "tl": "0",
-        "weight": 0,
-        "cost": 0,
-        "notes": "",
-        "active": false,
-        "quantity": 1,
-        "status": null,
-        "weapon": {
-          "scale": "traveller",
-          "range": 0,
-          "damage": "1D6+2",
-          "magazine": 0,
-          "ammo": 0,
-          "magazineCost": 0,
-          "characteristic": "STR",
-          "skill": "melee.natural",
-          "parryBonus": 0,
-          "damageBonus": "",
-          "damageType": "standard",
-          "attackBonus": 0,
-          "traits": ""
-        },
-        "name": "Add attack",
-        "damage": "1d6",
-        "skill": "melee.natural",
-        "img": "systems/mgt2e/icons/items/melee-natural.svg"
-      },
-      "_id": "DQAp40EQtm6hz8Z9",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "KjVCQnLdKUJeJDZy": 3
-      },
-      "flags": {},
-      "_stats": {
-        "systemId": "mgt2e",
-        "systemVersion": "0.9.2",
-        "coreVersion": "11.315",
-        "createdTime": 1722256235322,
-        "modifiedTime": 1722256259188,
-        "lastModifiedBy": "KjVCQnLdKUJeJDZy"
-      },
-      "_key": "!actors.items!DeqABSxbs8JN0tfF.DQAp40EQtm6hz8Z9"
-    }
-  ],
+  "items": [],
   "effects": [],
+  "folder": null,
   "ownership": {
     "default": 0,
-    "KjVCQnLdKUJeJDZy": 3
+    "lWflnjQsHXqlVIBe": 3
   },
   "flags": {
-    "core": {},
-    "mgt2e": {}
+    "mgt2e": {},
+    "core": {}
   },
   "_stats": {
     "systemId": "mgt2e",
     "systemVersion": "0.11.0",
     "coreVersion": "11.315",
-    "createdTime": 1722028767397,
-    "modifiedTime": 1733340453028,
+    "createdTime": 1733346940710,
+    "modifiedTime": 1733350984017,
     "lastModifiedBy": "lWflnjQsHXqlVIBe"
   },
-  "_id": "DeqABSxbs8JN0tfF",
-  "sort": -100000,
-  "_key": "!actors!DeqABSxbs8JN0tfF"
+  "_id": "IaCHV2f7cNt8a1pZ",
+  "sort": 0,
+  "_key": "!actors!IaCHV2f7cNt8a1pZ"
 }
