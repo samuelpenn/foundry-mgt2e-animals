@@ -1,0 +1,14 @@
+{
+    "MGT2.Creature.Behaviour.predator": "Predator",
+    "MGT2.Creature.Behaviour.predatorText": "Hunts living prey",
+    "MGT2.Creature.Trait.burrow": "Burrow",
+    "MGT2.Creature.Trait.poorSenses": "Poor Senses",
+    "MGT2.Creature.TraitChoice.burrow.idle": "Idle",
+    "MGT2.Creature.TraitChoice.burrow.verySlow": "Very Slow",
+    "MGT2.Creature.TraitChoice.burrow.slow": "Slow",
+    "MGT2.Creature.TraitChoice.burrow.medium": "Medium",
+    "MGT2.Creature.TraitChoice.burrow.high": "High",
+    "MGT2.Creature.TraitChoice.burrow.fast": "Fast",
+    "MGT2.Creature.TraitChoice.burrow.veryFast": "Very Fast"
+
+}
