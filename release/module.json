@@ -7,15 +7,28 @@
       "name": "Samuel Penn"
     }
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": {
-    "minimum": 11,
-    "verified": 11,
-    "maximum": 11
+    "minimum": 12,
+    "verified": 12,
+    "maximum": 12
   },
+  "esmodules": [
+    "animals.mjs"
+  ],
+  "styles": [
+    "animals.css"
+  ],
   "url": "",
   "download": "",
   "manifest": "",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "en.json"
+    }
+  ],
   "packs": [
     {
       "name": "mgt2e-animals",

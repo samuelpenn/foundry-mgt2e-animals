@@ -905,7 +905,11 @@
       "offsetX": 0,
       "offsetY": 0,
       "rotation": 0,
-      "tint": null
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "width": 2,
     "height": 2,
@@ -941,7 +945,9 @@
         "min": 0,
         "max": 1
       },
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "sight": {
       "enabled": false,
@@ -956,7 +962,23 @@
     },
     "detectionModes": [],
     "flags": {},
-    "randomImg": false
+    "randomImg": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
   },
   "items": [
     {
@@ -1003,10 +1025,12 @@
       "_stats": {
         "systemId": "mgt2e",
         "systemVersion": "0.9.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722256271265,
         "modifiedTime": 1722256322090,
-        "lastModifiedBy": "KjVCQnLdKUJeJDZy"
+        "lastModifiedBy": "KjVCQnLdKUJeJDZy",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!gPzZtoPptlUYS337.BarOAJM6LgMBvORV"
     }
@@ -1022,13 +1046,15 @@
   },
   "_stats": {
     "systemId": "mgt2e",
-    "systemVersion": "0.9.2",
-    "coreVersion": "11.315",
+    "systemVersion": "0.11.1",
+    "coreVersion": "12.331",
     "createdTime": 1721989667193,
-    "modifiedTime": 1722256740958,
-    "lastModifiedBy": "KjVCQnLdKUJeJDZy"
+    "modifiedTime": 1733500572839,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "gPzZtoPptlUYS337",
-  "sort": 50000,
+  "sort": 500000,
   "_key": "!actors!gPzZtoPptlUYS337"
 }

@@ -1,7 +1,7 @@
 {
   "name": "Brown Bear",
   "type": "creature",
-  "img": "systems/mgt2e/icons/actors/creature-red.svg",
+  "img": "modules/mgt2e-animals/images/brown_bear.webp",
   "system": {
     "speed": {
       "base": 6,
@@ -11,7 +11,7 @@
       "base": 0,
       "value": 0
     },
-    "size": "2",
+    "size": "1",
     "rads": 0,
     "weightCarried": 0,
     "heavyLoad": 0,
@@ -61,7 +61,7 @@
       "damage": 0,
       "tmpDamage": 0
     },
-    "description": "",
+    "description": "<p>Brown bears are amongst the largest of the modern bear species. They are omnivores, though only about 10% of what they eat is meat. They eat a wide range of food types, and if the opportunity arises they will attack domestic animals including cattle.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
     "settings": {
       "hideUntrained": false,
       "onlyBackground": false,
@@ -159,24 +159,24 @@
             "default": "DEX",
             "combat": true,
             "id": "dexterity",
-            "value": 0
+            "value": "1"
           },
           "endurance": {
             "default": "END",
             "id": "endurance",
-            "value": 0
+            "value": "1"
           },
           "strength": {
             "default": "STR",
             "combat": true,
             "id": "strength",
-            "value": 0
+            "value": "3"
           }
         },
         "id": "athletics",
         "value": 0,
         "icon": "systems/mgt2e/icons/skills/athletics.svg",
-        "trained": false
+        "trained": true
       },
       "broker": {
         "default": "INT",
@@ -501,28 +501,28 @@
           "unarmed": {
             "combat": true,
             "id": "unarmed",
-            "value": 0
+            "value": "0"
           },
           "blade": {
             "combat": true,
             "id": "blade",
-            "value": 0
+            "value": "0"
           },
           "bludgeon": {
             "combat": true,
             "id": "bludgeon",
-            "value": 0
+            "value": "0"
           },
           "natural": {
             "combat": true,
             "id": "natural",
-            "value": 0
+            "value": "3"
           }
         },
         "id": "melee",
         "value": 0,
         "icon": "systems/mgt2e/icons/skills/melee.svg",
-        "trained": false
+        "trained": true
       },
       "navigation": {
         "default": "INT",
@@ -605,9 +605,9 @@
         "requires": "INT",
         "creature": true,
         "id": "recon",
-        "value": 0,
+        "value": "0",
         "icon": "systems/mgt2e/icons/skills/recon.svg",
-        "trained": false,
+        "trained": true,
         "bonus": 1,
         "notes": "Heightened Senses"
       },
@@ -749,7 +749,7 @@
         "requires": "INT",
         "creature": true,
         "id": "survival",
-        "value": "0",
+        "value": "2",
         "icon": "systems/mgt2e/icons/skills/survival.svg",
         "trained": true,
         "bonus": 1,
@@ -836,36 +836,44 @@
     "archaic": 0,
     "ablat": 0,
     "powered": 0,
-    "behaviour": "omnivore hunter ",
+    "behaviour": "omnivore  grazer hunter",
     "traits": "heightenedSenses",
     "armour": {
-      "protection": null,
-      "rad": null,
-      "otherProtection": null,
-      "otherTypes": ""
+      "protection": 2,
+      "rad": 0,
+      "otherProtection": 0,
+      "otherTypes": "",
+      "archaic": 0,
+      "name": "Natural Armour",
+      "tl": 0
     }
   },
   "prototypeToken": {
     "name": "Brown Bear",
-    "displayName": 0,
+    "displayName": 50,
     "actorLink": false,
-    "appendNumber": false,
+    "appendNumber": true,
     "prependAdjective": false,
     "texture": {
-      "src": "icons/svg/mystery-man.svg",
+      "src": "modules/mgt2e-animals/images/Tokens/brown_bear.webp",
       "scaleX": 1,
       "scaleY": 1,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
     },
-    "width": 1,
-    "height": 1,
+    "width": 2,
+    "height": 2,
     "lockRotation": false,
     "rotation": 0,
     "alpha": 1,
-    "disposition": -1,
-    "displayBars": 0,
+    "disposition": 0,
+    "displayBars": 40,
     "bar1": {
       "attribute": "hits"
     },
@@ -892,7 +900,10 @@
       "darkness": {
         "min": 0,
         "max": 1
-      }
+      },
+      "negative": false,
+      "priority": 0,
+      "color": null
     },
     "sight": {
       "enabled": false,
@@ -902,15 +913,191 @@
       "attenuation": 0.1,
       "brightness": 0,
       "saturation": 0,
-      "contrast": 0
+      "contrast": 0,
+      "color": null
     },
     "detectionModes": [],
     "flags": {},
-    "randomImg": false
+    "randomImg": false,
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
   },
-  "items": [],
+  "items": [
+    {
+      "name": "Natural Armour",
+      "type": "armour",
+      "system": {
+        "tl": "0",
+        "weight": 0,
+        "cost": 0,
+        "notes": "",
+        "active": false,
+        "quantity": 1,
+        "status": null,
+        "armour": {
+          "protection": "2",
+          "otherProtection": "0",
+          "otherTypes": "",
+          "rad": 0,
+          "archaic": "0",
+          "skill": "",
+          "duration": 0,
+          "slots": 0,
+          "form": "natural",
+          "layered": 0,
+          "ablat": "0",
+          "powered": "0",
+          "worn": 0
+        },
+        "name": "Natural Armour",
+        "form": "natural",
+        "img": "systems/mgt2e/icons/items/armour-natural.svg"
+      },
+      "img": "systems/mgt2e/icons/items/armour-natural.svg",
+      "_id": "S7Aa7SiN1t2SfmHW",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mhUjqDVicnwIUaiq": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "mgt2e",
+        "systemVersion": "0.11.2",
+        "createdTime": 1733682670455,
+        "modifiedTime": 1733682675016,
+        "lastModifiedBy": "mhUjqDVicnwIUaiq"
+      },
+      "_key": "!actors.items!IaCHV2f7cNt8a1pZ.S7Aa7SiN1t2SfmHW"
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "tl": "0",
+        "weight": 0,
+        "cost": 0,
+        "notes": "",
+        "active": false,
+        "quantity": 1,
+        "status": null,
+        "weapon": {
+          "scale": "traveller",
+          "range": 0,
+          "damage": "2D6+2",
+          "magazine": 0,
+          "ammo": 0,
+          "magazineCost": 0,
+          "characteristic": "DEX",
+          "skill": "melee.natural",
+          "parryBonus": 0,
+          "damageBonus": "",
+          "damageType": "standard",
+          "attackBonus": 0,
+          "traits": "ap 3"
+        },
+        "name": "Add attack",
+        "damage": "1d6",
+        "skill": "melee.natural",
+        "img": "systems/mgt2e/icons/items/melee-natural.svg"
+      },
+      "img": "systems/mgt2e/icons/items/melee-natural.svg",
+      "_id": "NL7t0Rtf8IKAIbEE",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mhUjqDVicnwIUaiq": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "mgt2e",
+        "systemVersion": "0.11.2",
+        "createdTime": 1733682716134,
+        "modifiedTime": 1733682737858,
+        "lastModifiedBy": "mhUjqDVicnwIUaiq"
+      },
+      "_key": "!actors.items!IaCHV2f7cNt8a1pZ.NL7t0Rtf8IKAIbEE"
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "system": {
+        "tl": "0",
+        "weight": 0,
+        "cost": 0,
+        "notes": "",
+        "active": false,
+        "quantity": 1,
+        "status": null,
+        "weapon": {
+          "scale": "traveller",
+          "range": 0,
+          "damage": "2D6",
+          "magazine": 0,
+          "ammo": 0,
+          "magazineCost": 0,
+          "characteristic": "DEX",
+          "skill": "melee.natural",
+          "parryBonus": 0,
+          "damageBonus": "",
+          "damageType": "standard",
+          "attackBonus": 0,
+          "traits": ""
+        },
+        "name": "Add attack",
+        "damage": "1d6",
+        "skill": "melee.natural",
+        "img": "systems/mgt2e/icons/items/melee-natural.svg"
+      },
+      "img": "systems/mgt2e/icons/items/melee-natural.svg",
+      "_id": "NNhllwoTRh3EtKfH",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mhUjqDVicnwIUaiq": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "mgt2e",
+        "systemVersion": "0.11.2",
+        "createdTime": 1733682751052,
+        "modifiedTime": 1733682759986,
+        "lastModifiedBy": "mhUjqDVicnwIUaiq"
+      },
+      "_key": "!actors.items!IaCHV2f7cNt8a1pZ.NNhllwoTRh3EtKfH"
+    }
+  ],
   "effects": [],
-  "folder": null,
+  "folder": "uF5AuThZDtcuQF98",
   "ownership": {
     "default": 0,
     "lWflnjQsHXqlVIBe": 3
@@ -921,13 +1108,15 @@
   },
   "_stats": {
     "systemId": "mgt2e",
-    "systemVersion": "0.11.0",
-    "coreVersion": "11.315",
+    "systemVersion": "0.11.2",
+    "coreVersion": "12.331",
     "createdTime": 1733346940710,
-    "modifiedTime": 1733350984017,
-    "lastModifiedBy": "lWflnjQsHXqlVIBe"
+    "modifiedTime": 1733694368979,
+    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "IaCHV2f7cNt8a1pZ",
-  "sort": 0,
+  "sort": 300000,
   "_key": "!actors!IaCHV2f7cNt8a1pZ"
 }
