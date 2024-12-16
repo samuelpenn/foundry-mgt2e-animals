@@ -1,0 +1,22 @@
+{
+  "name": "Prehistoric",
+  "sorting": "a",
+  "folder": null,
+  "type": "Actor",
+  "_id": "kkHJuHOm0zWe2DTt",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.329",
+    "systemId": "mgt2e",
+    "systemVersion": "0.11.2",
+    "createdTime": 1734280560540,
+    "modifiedTime": 1734280560540,
+    "lastModifiedBy": "Zj6ESAn9IiciiMCF"
+  },
+  "_key": "!folders!kkHJuHOm0zWe2DTt"
+}

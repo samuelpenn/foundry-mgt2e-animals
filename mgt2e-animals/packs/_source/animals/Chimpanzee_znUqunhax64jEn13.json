@@ -999,12 +999,12 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "12.331",
+    "coreVersion": "12.329",
     "systemId": "mgt2e",
-    "systemVersion": "0.11.1",
+    "systemVersion": "0.11.2",
     "createdTime": 1733438567585,
-    "modifiedTime": 1733438952285,
-    "lastModifiedBy": "mhUjqDVicnwIUaiq"
+    "modifiedTime": 1734288155910,
+    "lastModifiedBy": "Zj6ESAn9IiciiMCF"
   },
   "_key": "!actors!znUqunhax64jEn13"
 }

@@ -4,7 +4,7 @@
   "img": "modules/mgt2e-animals/images/brown_bear.webp",
   "system": {
     "speed": {
-      "base": 6,
+      "base": 9,
       "value": 6
     },
     "initiative": {
@@ -1109,10 +1109,10 @@
   "_stats": {
     "systemId": "mgt2e",
     "systemVersion": "0.11.2",
-    "coreVersion": "12.331",
+    "coreVersion": "12.329",
     "createdTime": 1733346940710,
-    "modifiedTime": 1733694368979,
-    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "modifiedTime": 1734281243931,
+    "lastModifiedBy": "Zj6ESAn9IiciiMCF",
     "compendiumSource": null,
     "duplicateSource": null
   },

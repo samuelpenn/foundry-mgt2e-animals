@@ -1046,11 +1046,11 @@
   },
   "_stats": {
     "systemId": "mgt2e",
-    "systemVersion": "0.11.1",
-    "coreVersion": "12.331",
+    "systemVersion": "0.11.2",
+    "coreVersion": "12.329",
     "createdTime": 1721989667193,
-    "modifiedTime": 1733500572839,
-    "lastModifiedBy": "mhUjqDVicnwIUaiq",
+    "modifiedTime": 1734289089120,
+    "lastModifiedBy": "Zj6ESAn9IiciiMCF",
     "compendiumSource": null,
     "duplicateSource": null
   },
